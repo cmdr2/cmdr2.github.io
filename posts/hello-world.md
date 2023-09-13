@@ -1,3 +1,7 @@
+---
+title: Hello World
+---
+
 First post on a simple blogging thing using GitHub Pages.
 
 I'll try to use GitHub Actions to auto-generate a directory listing (in JSON), or generate a static index page with links to the posts.
