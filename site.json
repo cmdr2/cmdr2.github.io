@@ -9,6 +9,9 @@
     "github": "cmdr2",
     "twitter": "cmdr2"
   },
+  "newsletter": {
+    "showTwitterBanner": false
+  },
   "seo": {
     "title": "cmdr2",
     "description": "cmdr2's posts",
