@@ -1,5 +1,6 @@
 ---
 title: Second Post
+date: 2023-09-13
 ---
 
 # Fancy title too

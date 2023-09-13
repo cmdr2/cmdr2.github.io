@@ -1,5 +1,6 @@
 ---
 title: Hello World
+date: 2023-09-12
 ---
 
 First post on a simple blogging thing using GitHub Pages.
