@@ -6,5 +6,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
+
       - name: Create Blog from Markdown Files
         uses: kamranahmedse/github-pages-blog-action@v0.0.10
