@@ -1,0 +1,2 @@
+- name: Create Blog from Markdown Files
+  uses: kamranahmedse/github-pages-blog-action@v0.0.10
