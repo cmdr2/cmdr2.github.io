@@ -1,2 +1,10 @@
-- name: Create Blog from Markdown Files
-  uses: kamranahmedse/github-pages-blog-action@v0.0.10
+name: Make Blog
+on:
+  push:
+    branches: [gh-pages]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create Blog from Markdown Files
+        uses: kamranahmedse/github-pages-blog-action@v0.0.10
