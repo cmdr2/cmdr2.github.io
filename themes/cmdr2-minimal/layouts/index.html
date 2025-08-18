@@ -1,5 +1,5 @@
 {{ define "main" }}
-  {{ $pages := where .Site.RegularPages "Params.tags" "intersect" (slice "easydiffusion") }}
+  {{ $pages := where .Site.RegularPages "Params.tags" "intersect" (slice "worklog") }}
   {{ $pages = $pages | symdiff .Site.RegularPages }}
   {{ partial "post_list.html" (dict "Pages" $pages "Context" .) }}
 {{ end }}
