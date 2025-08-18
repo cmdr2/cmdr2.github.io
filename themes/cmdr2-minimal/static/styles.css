@@ -158,6 +158,7 @@ ul.tags li {
     margin-right: 0.5em;
     font-size: 0.85em;
     color: #75715e;
+    overflow-wrap: break-word;
 }
 
 ul.tags li a {
@@ -167,6 +168,10 @@ ul.tags li a {
 
 ul.tags li a:hover {
     color: #f92672;
+}
+
+.post_list ul.tags li {
+    margin-right: 1em;
 }
 
 /* Index */
