@@ -1,19 +1,4 @@
 {{ define "main" }}
-<div class="post_list">
   {{ $pages := .Pages }}
-  {{ if .IsHome }}
-    {{ $pages = where .Site.RegularPages "Type" "in" (slice "post" "posts" "notes") }}
-  {{ end }}
-  {{ range $pages.ByDate.Reverse }}
-  <article class="post">
-    <time class="date"><a href="{{ .RelPermalink }}">{{ .Date.Format "Mon Jan 02 15:04 2006" }}</a></time>
-    {{ with .Params.tags }}
-    <ul class="tags">
-      {{ range . }}<li class="tag">{{ . }}</li>{{ end }}
-    </ul>
-    {{ end }}
-    <p>{{ .Summary }}</p>
-  </article>
-  {{ end }}
-</div>
+  {{ partial "post_list.html" (dict "Pages" $pages "Context" .) }}
 {{ end }}
