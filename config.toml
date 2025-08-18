@@ -12,6 +12,19 @@ theme = "cmdr2-minimal"
 [taxonomies]
   tag = "tags"
 
+[mediaTypes]
+  [mediaTypes."application/atom+xml"]
+    suffixes = ["xml"]
+
+[outputFormats]
+  [outputFormats.atom]
+    mediaType = "application/atom+xml"
+    noUgly = true
+    baseName = "atom"
+
+[outputs]
+  home = ["HTML", "atom"]
+
 [params]
   github = "https://github.com/cmdr2"
   x = "https://x.com/cmdr2"
