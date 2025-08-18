@@ -160,9 +160,13 @@ ul.tags li {
     color: #75715e;
 }
 
-ul.tags li::before {
-    content: "#";
+ul.tags li a {
     color: #75715e;
+    text-decoration: none;
+}
+
+ul.tags li a:hover {
+    color: #f92672;
 }
 
 /* Index */
