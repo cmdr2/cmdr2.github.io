@@ -177,6 +177,10 @@ ul.tags li a:hover {
     position: relative;
 }
 
+.post:first-of-type {
+    margin-top: 8pt;
+}
+
 /* Footer */
 footer {
     background-color: #1e1f1c;
@@ -205,6 +209,21 @@ footer {
     color: grey;
 }
 
+#postFilter {
+    padding: 8pt 20pt;
+    font-size: 10pt;
+    padding-top: 12pt;
+    padding-bottom: 0;
+}
+
+.filterBy {
+    color: #bbb;
+}
+.filterBy a {
+    color: #bbb;
+    text-decoration: underline;
+}
+
 @media (max-width: 600px) {
     html {
         font-size: 110%; /* Increase font size slightly for mobile devices */
@@ -222,5 +241,11 @@ footer {
 
     .post_list article {
         margin: 1.5em 0.75em;
+    }
+
+    #postFilter {
+        padding: 8pt 12pt;
+        padding-top: 12pt;
+        padding-bottom: 0;
     }
 }

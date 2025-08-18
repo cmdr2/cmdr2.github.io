@@ -1,5 +1,8 @@
 {{ define "main" }}
   {{ $pages := where .Site.RegularPages "Params.tags" "intersect" (slice "worklog") }}
   {{ $pages = $pages | symdiff .Site.RegularPages }}
+  <div id="postFilter">
+    <span class="filterBy"># filter by: [<b>posts</b> | <a href="{{ "/tags/worklog" | relURL }}">worklogs</a>]</span>
+  </div>
   {{ partial "post_list.html" (dict "Pages" $pages "Context" .) }}
 {{ end }}
