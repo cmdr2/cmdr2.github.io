@@ -24,6 +24,8 @@ theme = "cmdr2-minimal"
 
 [outputs]
   home = ["HTML", "atom"]
+  taxonomy = ["HTML"]
+  term = ["HTML"]
 
 [minify]
   disableHTML = true
