@@ -1,7 +1,9 @@
 baseURL = ""
 title = "~ / cmdr2"
 theme = "cmdr2-minimal"
-paginate = 15
+
+[pagination]
+  pagerSize = 15
 
 [permalinks]
   [permalinks.page]
