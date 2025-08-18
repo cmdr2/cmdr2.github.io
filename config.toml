@@ -25,6 +25,9 @@ theme = "cmdr2-minimal"
 [outputs]
   home = ["HTML", "atom"]
 
+[minify]
+  disableHTML = true
+
 [params]
   github = "https://github.com/cmdr2"
   x = "https://x.com/cmdr2"
