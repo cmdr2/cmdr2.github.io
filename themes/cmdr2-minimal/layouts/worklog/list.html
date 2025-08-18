@@ -1,0 +1,4 @@
+{{ define "main" }}
+  {{ $pages := where .Site.RegularPages "Params.tags" "intersect" (slice "easydiffusion") }}
+  {{ partial "post_list.html" (dict "Pages" $pages "Context" .) }}
+{{ end }}

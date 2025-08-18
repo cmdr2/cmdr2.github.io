@@ -1,0 +1,22 @@
+baseURL = ""
+title = "~ / cmdr2"
+theme = "cmdr2-minimal"
+paginate = 15
+
+[permalinks]
+  [permalinks.page]
+    posts = "/notes/:year/:month/:slug/"
+
+[taxonomies]
+  tag = "tags"
+
+[params]
+  github = "https://github.com/cmdr2"
+  x = "https://x.com/cmdr2"
+  discord = "#"
+  discordAlert = "cmdr2 is the discord username"
+
+relativeURLs = true
+canonifyURLs = false
+
+disableKinds = ["RSS"]

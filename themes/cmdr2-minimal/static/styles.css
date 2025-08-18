@@ -1,0 +1,223 @@
+/* Base settings */
+body {
+    background-color: #1f2021;
+    color: #f8f8f2;
+    font-family: 'Fira Code', 'Consolas', 'Courier New', monospace;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #1e1f1c;
+    color: #f92672;
+    padding: 0.75em 1.2em;
+    font-size: 1.5em;
+    border-bottom: 1px solid #3e3d32;
+    display: flex;
+    align-items: center;
+}
+header h1 {
+    margin: 0;
+    color: #a6e22e;
+}
+header h1 a {
+    color: #a6e22e;
+}
+
+.social-icon {
+    margin-left: 10px; /* Space between title and icons */
+    color: #66d9ef; /* Icon color */
+    text-decoration: none; /* Remove underline */
+}
+
+.social-icon:hover {
+    color: #ff79c6; /* Change color on hover */
+}
+
+/* Links */
+a {
+    color: #66d9ef;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #f92672;
+}
+
+/* Blog post titles */
+h1, h2, h3, h4, h5, h6 {
+    color: #0fb0e1;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+h1 {
+    font-size: 17pt; /* Set font size for h1 */
+}
+
+h2 {
+    font-size: 15pt; /* Set font size for h2 */
+}
+
+h3 {
+    font-size: 13pt; /* Set font size for h3 */
+}
+
+h4 {
+    font-size: 12pt; /* Set font size for h4 */
+}
+
+/* Blog content */
+article {
+    margin: 1.5em;
+    padding: 0.5em;
+    padding-left: 0.75em;
+}
+
+/* Paragraphs */
+p {
+    margin-bottom: 1.2em;
+    width: 100%; /* Ensure paragraphs take full width */
+    font-size: 11pt; /* Set font size for paragraphs */
+}
+article ul,
+article ol {
+    font-size: 11pt;
+    margin: 0;
+    padding-left: 13pt;
+}
+
+/* Blockquotes */
+blockquote {
+    border-left: 4px solid #f92672;
+    padding-left: 1em;
+    color: #e6db74;
+    background-color: #3e3d32;
+}
+
+/* Code blocks */
+pre, code {
+    background-color: #0e0e0e !important; /* Force background color */
+    color: #f8f8f2;
+    padding: 0; /* Remove padding */
+    border-radius: 8px !important; /* Rounded corners */
+    font-family: 'Fira Code', 'Consolas', 'Courier New', monospace;
+    font-size: 10pt !important;
+}
+
+.highlight pre,
+.content > pre {
+    padding: 1em;
+}
+
+pre code {
+    background-color: transparent; /* Ensure inline code does not inherit the background */
+}
+
+pre {
+    margin-bottom: 1.5em;
+    overflow-x: auto;
+}
+
+code {
+    color: #66d9ef;
+}
+
+/* Inline code */
+p code {
+    background-color: #49483e;
+    color: #f8f8f2;
+    padding: 0.15em 0.35em; /* Add padding */
+    border-radius: 3px;
+    font-size: 10pt; /* Slightly smaller font size */
+}
+
+/* Lists */
+ul, ol {
+    margin-left: 2em;
+    margin-bottom: 1.5em;
+}
+
+/* Time element styling */
+time {
+    font-size: 0.95em; /* Slightly larger font size */
+    color: #b6b2a0;    /* Brighter color */
+}
+
+/* Tags class styling */
+ul.tags {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+ul.tags li {
+    display: inline;
+    margin-right: 0.5em;
+    font-size: 0.85em;
+    color: #75715e;
+}
+
+ul.tags li::before {
+    content: "#";
+    color: #75715e;
+}
+
+/* Index */
+.post_list article {
+    border: 1px solid #2c363f;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    position: relative;
+}
+
+/* Footer */
+footer {
+    background-color: #1e1f1c;
+    color: #75715e;
+    text-align: center;
+    padding: 1em;
+    font-size: 0.9em;
+    border-top: 1px solid #3e3d32;
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center; /* Center the buttons */
+    align-items: center;
+    gap: 20px; /* Add space between the "Previous" and "Next" buttons */
+    margin: 20px 0;
+    list-style-type: none;
+}
+
+.pagination .active a {
+    color: white;
+}
+
+.pagination .disabled a {
+    color: grey;
+}
+
+@media (max-width: 600px) {
+    html {
+        font-size: 110%; /* Increase font size slightly for mobile devices */
+    }
+
+    header {
+        padding: 0.75em;
+    }
+
+    article:not(.post_list article) {
+        margin: 0.5em;
+        padding: 0.2em;
+        padding-left: 0.15em;
+    }
+
+    .post_list article {
+        margin: 1.5em 0.75em;
+        max-height: 400px;
+    }
+}

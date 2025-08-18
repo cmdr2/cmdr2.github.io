@@ -1,0 +1,11 @@
+<footer>
+  {{ with .Site.Params.github }}
+  <a href="{{ . }}" target="_blank">[github]</a>
+  {{ end }}
+  {{ with .Site.Params.x }}
+  <a href="{{ . }}" target="_blank">[x]</a>
+  {{ end }}
+  {{ with .Site.Params.discord }}
+  <a href="{{ . }}" class="discord-link" target="_blank">[discord]</a>
+  {{ end }}
+</footer>
