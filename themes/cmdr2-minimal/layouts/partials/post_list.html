@@ -8,7 +8,7 @@
       <article class="post">
         <time class="date"><a href="{{ .RelPermalink }}">{{ .Date.Format "Mon Jan 02 15:04 2006" }}</a></time>
         {{ with .Params.tags }}<ul class="tags">{{ range . }}<li class="tag">#{{ . }}</li>{{ end }}</ul>{{ end }}
-        <p>{{ .Summary }}</p>
+        <p>{{ .Summary | plainify }}</p>
       </article>
     {{ end }}
     {{ template "_internal/pagination.html" $ctx }}
