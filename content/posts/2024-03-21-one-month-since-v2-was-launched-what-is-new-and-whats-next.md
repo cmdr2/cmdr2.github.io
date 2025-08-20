@@ -5,6 +5,7 @@ slug: "one-month-since-v2-was-launched-what-is-new-and-whats-next"
 tags:
   - freebird
 ---
+
 # One month since v2 was launched: what is new and what's next?
 
 It's been slightly over a month since Freebird's v2 was launched, so let's recap what's happened since then, and look at what's coming up next!
@@ -55,4 +56,4 @@ So yeah, lots more to come. The focus, as always, remains on making VR a part of
 
 Thanks!
 
-[Get started with Freebird!](../../getting-started.md){ .md-button }
+[Get started with Freebird!](https://freebirdxr.com/getting-started/){ .md-button }
