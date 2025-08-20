@@ -1,4 +1,4 @@
-<header>
+<header id="topnav">
   <h1>
     {{ if .IsHome }}
       {{ .Site.Title }}
@@ -21,4 +21,17 @@
     </a>
     {{ end }}
   </h1>
+</header>
+<header id="project-nav">
+    <h4>
+        projects:
+        <a href="https://freebirdxr.com" target="_blank" class="project-link" title="GitHub">freebird</a>,
+        <a href="https://github.com/easydiffusion/easydiffusion" target="_blank" class="project-link" title="X">easy diffusion</a>
+    </h4>
+    <h4>
+        hacks:
+        <a href="https://github.com/cmdr2/carbon" target="_blank" class="project-link" title="GitHub">carbon editor</a>,
+        <a href="https://github.com/easydiffusion/torchruntime" target="_blank" class="project-link" title="X">torchruntime</a>,
+        <a href="https://findstarlink.com" class="project-link" target="_blank" title="Discord">findstarlink</a>
+    </h4>
 </header>
