@@ -3,7 +3,7 @@ title = "~ / cmdr2"
 theme = "cmdr2-minimal"
 
 [pagination]
-  pagerSize = 15
+  pagerSize = 10
 
 [permalinks]
   [permalinks.page]
