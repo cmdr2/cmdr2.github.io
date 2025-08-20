@@ -1,0 +1,10 @@
+<div id="postFilter">
+    <label>notes:</label>
+    <span class="filterBy"># filter by: [
+        {{ if eq .Current "home" }}
+            <b>posts</b> | <a href="{{ "/tags/worklog" | relURL }}">worklogs</a>
+        {{ else if eq .Current "worklog" }}
+            <a href="{{ "/" | relURL }}">posts</a> | <b>worklogs</b>
+        {{ end }}
+    ]</span>
+</div>

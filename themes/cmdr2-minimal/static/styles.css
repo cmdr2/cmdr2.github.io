@@ -259,6 +259,10 @@ footer {
     padding-top: 12pt;
     padding-bottom: 0;
 }
+#postFilter label {
+    font-weight: bold;
+    color: var(--heading);
+}
 
 .filterBy {
     color: var(--comment);
