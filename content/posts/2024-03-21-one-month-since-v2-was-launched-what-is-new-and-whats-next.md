@@ -57,5 +57,3 @@ While nothing is ever *promised* (especially since priorities can change based o
 So yeah, lots more to come. The focus, as always, remains on making VR a part of the daily design workflow. So will continue figuring out what's preventing people from using it regularly, and bridging that gap.
 
 Thanks!
-
-[Get started with Freebird!](https://freebirdxr.com/getting-started/){ .md-button }
