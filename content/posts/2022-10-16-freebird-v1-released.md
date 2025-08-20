@@ -6,7 +6,7 @@ tags:
   - freebird
 ---
 
-Cross-posted from [Freebird's blog](https://freebirdxr.com/blog/2022/10/16/freebird-v1-released).
+// Cross-posted from [Freebird's blog](https://freebirdxr.com/blog/2022/10/16/freebird-v1-released).
 
 # Freebird v1 released!
 

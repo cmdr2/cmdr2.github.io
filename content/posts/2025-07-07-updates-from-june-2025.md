@@ -6,7 +6,7 @@ tags:
   - freebird
 ---
 
-Cross-posted from [Freebird's blog](https://freebirdxr.com/blog/2025/07/07/updates-from-june-2025).
+// Cross-posted from [Freebird's blog](https://freebirdxr.com/blog/2025/07/07/updates-from-june-2025).
 
 # Updates from June 2025
 

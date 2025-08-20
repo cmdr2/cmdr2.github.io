@@ -6,7 +6,7 @@ tags:
   - freebird
 ---
 
-Cross-posted from [Freebird's blog](https://freebirdxr.com/blog/2024/03/21/one-month-since-v2-was-launched-what-is-new-and-whats-next).
+// Cross-posted from [Freebird's blog](https://freebirdxr.com/blog/2024/03/21/one-month-since-v2-was-launched-what-is-new-and-whats-next).
 
 # One month since v2 was launched: what is new and what's next?
 
