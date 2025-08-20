@@ -50,5 +50,3 @@ Did I miss any? Please send me your cool "made with Freebird" videos!
 Lots more to come. The focus, as always, remains on making VR a part of your daily design workflow.
 
 Thanks!
-
-[Get started with Freebird!](https://freebirdxr.com/getting-started/){ .md-button }
