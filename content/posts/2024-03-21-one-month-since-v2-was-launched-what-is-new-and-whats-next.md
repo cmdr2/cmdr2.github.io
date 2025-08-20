@@ -6,6 +6,8 @@ tags:
   - freebird
 ---
 
+Cross-posted from [Freebird's blog](https://freebirdxr.com/blog/2024/03/21/one-month-since-v2-was-launched-what-is-new-and-whats-next).
+
 # One month since v2 was launched: what is new and what's next?
 
 It's been slightly over a month since Freebird's v2 was launched, so let's recap what's happened since then, and look at what's coming up next!

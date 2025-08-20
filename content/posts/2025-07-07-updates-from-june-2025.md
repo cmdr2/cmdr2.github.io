@@ -6,6 +6,8 @@ tags:
   - freebird
 ---
 
+Cross-posted from [Freebird's blog](https://freebirdxr.com/blog/2025/07/07/updates-from-june-2025).
+
 # Updates from June 2025
 
 *Note: Freebird is free for students! If you're a student at a school or college, please feel free to [email](mailto:dev@freebirdxr.com) or [message me](https://discord.gg/X6B4ZYEWSS) for a free copy!*

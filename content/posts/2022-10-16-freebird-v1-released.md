@@ -6,6 +6,8 @@ tags:
   - freebird
 ---
 
+Cross-posted from [Freebird's blog](https://freebirdxr.com/blog/2022/10/16/freebird-v1-released).
+
 # Freebird v1 released!
 
 Freebird allows you to use a VR headset with Blender, to create and edit content inside regular Blender. 
