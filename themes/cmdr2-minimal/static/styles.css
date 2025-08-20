@@ -109,7 +109,6 @@ h4 {
 
 /* Blog content */
 article {
-    margin: 1.5em;
     padding: 0.5em;
     padding-left: 0;
 }
@@ -180,7 +179,7 @@ ul, ol {
 
 /* Time element styling */
 time {
-    font-size: 0.95em;
+    font-size: 11pt;
     color: var(--comment);
 }
 
@@ -214,15 +213,19 @@ ul.tags li a:hover {
 
 /* Index */
 .post_list article {
-    border: 1px solid var(--post-border);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
-    border-radius: 8px;
-    position: relative;
-    padding-left: 0.75em;
+    margin-left: 1.5em;
+}
+
+.post_list article > time::before {
+    content: "- ";
 }
 
 .post:first-of-type {
     margin-top: 8pt;
+}
+
+.post_content {
+    padding-left: 10pt;
 }
 
 /* Footer */
@@ -295,7 +298,11 @@ footer {
     }
 
     .post_list article {
-        margin: 1.5em 0.75em;
+        margin: 0em 0.75em;
+    }
+
+    .post_list article p {
+        font-size: 10pt;
     }
 
     #postFilter {
