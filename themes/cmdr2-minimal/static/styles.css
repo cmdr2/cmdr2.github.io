@@ -4,10 +4,8 @@
     --header-bg: #1e1f1c;
     --header-border: #3e3d32;
     --header-title: #a6e22e;
-    --header-accent: #f92672;
-    --social-icon: #66d9ef;
-    --social-icon-hover: #ff79c6;
-    --project-link: #66d9ef;
+    --link: #66d9ef;
+    --link-hover: #ff4f8f;
     --heading: #0fb0e1;
     --blockquote-border: #f92672;
     --blockquote-bg: #3e3d32;
@@ -15,17 +13,15 @@
     --code-bg: #0e0e0e;
     --code-inline-bg: #49483e;
     --code-inline: #f8f8f2;
-    --code: #66d9ef;
     --post-border: #2c363f;
     --footer-bg: #1e1f1c;
     --footer-text: #75715e;
     --footer-border: #3e3d32;
     --pagination-active: white;
     --pagination-disabled: grey;
-    --time: #b6b2a0;
+    --comment: #b6b2a0;
     --tags: #75715e;
-    --tags-hover: #f92672;
-    --filterBy: #bbb;
+    --comment: #bbb;
 }
 
 /* Base settings */
@@ -41,7 +37,6 @@ body {
 /* Header */
 header {
     background-color: var(--header-bg);
-    color: var(--header-accent);
     padding: 0.75em 1.2em;
     font-size: 1.5em;
     border-bottom: 1px solid var(--header-border);
@@ -58,12 +53,12 @@ header h1 a {
 
 .social-icon {
     margin-left: 10px;
-    color: var(--social-icon);
+    color: var(--link);
     text-decoration: none;
 }
 
 .social-icon:hover {
-    color: var(--social-icon-hover);
+    color: var(--link-hover);
 }
 
 #project-nav {
@@ -75,18 +70,18 @@ header h1 a {
     margin: 0;
 }
 .project-link {
-    color: var(--project-link);
+    color: var(--link);
     text-decoration: none;
 }
 
 /* Links */
 a {
-    color: var(--project-link);
+    color: var(--link);
     text-decoration: none;
 }
 
 a:hover {
-    color: var(--header-accent);
+    color: var(--link-hover);
 }
 
 /* Blog post titles */
@@ -165,7 +160,7 @@ pre {
 }
 
 code {
-    color: var(--code);
+    color: var(--code-inline);
 }
 
 /* Inline code */
@@ -186,7 +181,7 @@ ul, ol {
 /* Time element styling */
 time {
     font-size: 0.95em;
-    color: var(--time);
+    color: var(--comment);
 }
 
 /* Tags class styling */
@@ -210,7 +205,7 @@ ul.tags li a {
 }
 
 ul.tags li a:hover {
-    color: var(--tags-hover);
+    color: var(--link-hover);
 }
 
 .post_list ul.tags li {
@@ -266,11 +261,14 @@ footer {
 }
 
 .filterBy {
-    color: var(--filterBy);
+    color: var(--comment);
 }
 .filterBy a {
-    color: var(--filterBy);
+    color: var(--comment);
     text-decoration: underline;
+}
+.filterBy a:hover {
+    color: var(--link-hover);
 }
 
 @media (max-width: 600px) {
