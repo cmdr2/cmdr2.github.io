@@ -1,7 +1,37 @@
+:root {
+    --background: #1f2021;
+    --foreground: #f8f8f2;
+    --header-bg: #1e1f1c;
+    --header-border: #3e3d32;
+    --header-title: #a6e22e;
+    --header-accent: #f92672;
+    --social-icon: #66d9ef;
+    --social-icon-hover: #ff79c6;
+    --project-link: #66d9ef;
+    --heading: #0fb0e1;
+    --blockquote-border: #f92672;
+    --blockquote-bg: #3e3d32;
+    --blockquote-text: #e6db74;
+    --code-bg: #0e0e0e;
+    --code-inline-bg: #49483e;
+    --code-inline: #f8f8f2;
+    --code: #66d9ef;
+    --post-border: #2c363f;
+    --footer-bg: #1e1f1c;
+    --footer-text: #75715e;
+    --footer-border: #3e3d32;
+    --pagination-active: white;
+    --pagination-disabled: grey;
+    --time: #b6b2a0;
+    --tags: #75715e;
+    --tags-hover: #f92672;
+    --filterBy: #bbb;
+}
+
 /* Base settings */
 body {
-    background-color: #1f2021;
-    color: #f8f8f2;
+    background-color: var(--background);
+    color: var(--foreground);
     font-family: 'Fira Code', 'Consolas', 'Courier New', monospace;
     line-height: 1.6;
     margin: 0;
@@ -10,30 +40,30 @@ body {
 
 /* Header */
 header {
-    background-color: #1e1f1c;
-    color: #f92672;
+    background-color: var(--header-bg);
+    color: var(--header-accent);
     padding: 0.75em 1.2em;
     font-size: 1.5em;
-    border-bottom: 1px solid #3e3d32;
+    border-bottom: 1px solid var(--header-border);
     display: flex;
     align-items: center;
 }
 header h1 {
     margin: 0;
-    color: #a6e22e;
+    color: var(--header-title);
 }
 header h1 a {
-    color: #a6e22e;
+    color: var(--header-title);
 }
 
 .social-icon {
-    margin-left: 10px; /* Space between title and icons */
-    color: #66d9ef; /* Icon color */
-    text-decoration: none; /* Remove underline */
+    margin-left: 10px;
+    color: var(--social-icon);
+    text-decoration: none;
 }
 
 .social-icon:hover {
-    color: #ff79c6; /* Change color on hover */
+    color: var(--social-icon-hover);
 }
 
 #project-nav {
@@ -45,41 +75,41 @@ header h1 a {
     margin: 0;
 }
 .project-link {
-    color: #66d9ef;
+    color: var(--project-link);
     text-decoration: none;
 }
 
 /* Links */
 a {
-    color: #66d9ef;
+    color: var(--project-link);
     text-decoration: none;
 }
 
 a:hover {
-    color: #f92672;
+    color: var(--header-accent);
 }
 
 /* Blog post titles */
 h1, h2, h3, h4, h5, h6 {
-    color: #0fb0e1;
+    color: var(--heading);
     margin-top: 1em;
     margin-bottom: 0.5em;
 }
 
 h1 {
-    font-size: 17pt; /* Set font size for h1 */
+    font-size: 17pt;
 }
 
 h2 {
-    font-size: 15pt; /* Set font size for h2 */
+    font-size: 15pt;
 }
 
 h3 {
-    font-size: 13pt; /* Set font size for h3 */
+    font-size: 13pt;
 }
 
 h4 {
-    font-size: 12pt; /* Set font size for h4 */
+    font-size: 12pt;
 }
 
 /* Blog content */
@@ -92,8 +122,8 @@ article {
 /* Paragraphs */
 p {
     margin-bottom: 1.2em;
-    width: 100%; /* Ensure paragraphs take full width */
-    font-size: 11pt; /* Set font size for paragraphs */
+    width: 100%;
+    font-size: 11pt;
 }
 article ul,
 article ol {
@@ -104,18 +134,18 @@ article ol {
 
 /* Blockquotes */
 blockquote {
-    border-left: 4px solid #f92672;
+    border-left: 4px solid var(--blockquote-border);
     padding-left: 1em;
-    color: #e6db74;
-    background-color: #3e3d32;
+    color: var(--blockquote-text);
+    background-color: var(--blockquote-bg);
 }
 
 /* Code blocks */
 pre, code {
-    background-color: #0e0e0e !important; /* Force background color */
-    color: #f8f8f2;
-    padding: 0; /* Remove padding */
-    border-radius: 8px !important; /* Rounded corners */
+    background-color: var(--code-bg) !important;
+    color: var(--foreground);
+    padding: 0;
+    border-radius: 8px !important;
     font-family: 'Fira Code', 'Consolas', 'Courier New', monospace;
     font-size: 10pt !important;
 }
@@ -126,7 +156,7 @@ pre, code {
 }
 
 pre code {
-    background-color: transparent; /* Ensure inline code does not inherit the background */
+    background-color: transparent;
 }
 
 pre {
@@ -135,16 +165,16 @@ pre {
 }
 
 code {
-    color: #66d9ef;
+    color: var(--code);
 }
 
 /* Inline code */
 p code {
-    background-color: #49483e;
-    color: #f8f8f2;
-    padding: 0.15em 0.35em; /* Add padding */
+    background-color: var(--code-inline-bg);
+    color: var(--code-inline);
+    padding: 0.15em 0.35em;
     border-radius: 3px;
-    font-size: 10pt; /* Slightly smaller font size */
+    font-size: 10pt;
 }
 
 /* Lists */
@@ -155,8 +185,8 @@ ul, ol {
 
 /* Time element styling */
 time {
-    font-size: 0.95em; /* Slightly larger font size */
-    color: #b6b2a0;    /* Brighter color */
+    font-size: 0.95em;
+    color: var(--time);
 }
 
 /* Tags class styling */
@@ -170,17 +200,17 @@ ul.tags li {
     display: inline;
     margin-right: 0.5em;
     font-size: 0.85em;
-    color: #75715e;
+    color: var(--tags);
     overflow-wrap: break-word;
 }
 
 ul.tags li a {
-    color: #75715e;
+    color: var(--tags);
     text-decoration: none;
 }
 
 ul.tags li a:hover {
-    color: #f92672;
+    color: var(--tags-hover);
 }
 
 .post_list ul.tags li {
@@ -189,7 +219,7 @@ ul.tags li a:hover {
 
 /* Index */
 .post_list article {
-    border: 1px solid #2c363f;
+    border: 1px solid var(--post-border);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
     border-radius: 8px;
     position: relative;
@@ -202,30 +232,30 @@ ul.tags li a:hover {
 
 /* Footer */
 footer {
-    background-color: #1e1f1c;
-    color: #75715e;
+    background-color: var(--footer-bg);
+    color: var(--footer-text);
     text-align: center;
     padding: 1em;
     font-size: 0.9em;
-    border-top: 1px solid #3e3d32;
+    border-top: 1px solid var(--footer-border);
 }
 
 /* Pagination */
 .pagination {
     display: flex;
-    justify-content: center; /* Center the buttons */
+    justify-content: center;
     align-items: center;
-    gap: 20px; /* Add space between the "Previous" and "Next" buttons */
+    gap: 20px;
     margin: 20px 0;
     list-style-type: none;
 }
 
 .pagination .active a {
-    color: white;
+    color: var(--pagination-active);
 }
 
 .pagination .disabled a {
-    color: grey;
+    color: var(--pagination-disabled);
 }
 
 #postFilter {
@@ -236,16 +266,16 @@ footer {
 }
 
 .filterBy {
-    color: #bbb;
+    color: var(--filterBy);
 }
 .filterBy a {
-    color: #bbb;
+    color: var(--filterBy);
     text-decoration: underline;
 }
 
 @media (max-width: 600px) {
     html {
-        font-size: 110%; /* Increase font size slightly for mobile devices */
+        font-size: 110%;
     }
 
     header {
