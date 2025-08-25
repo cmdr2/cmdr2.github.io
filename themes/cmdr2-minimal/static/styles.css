@@ -33,6 +33,16 @@ body {
     margin: 0;
     padding: 0;
 }
+table {
+    border-spacing: 0;
+}
+table, th, td {
+    border: 1px solid var(--header-border);
+    border-collapse: collapse;
+}
+td {
+    padding: 2pt 4pt;
+}
 
 /* Header */
 header {
@@ -125,6 +135,9 @@ article ol {
     font-size: 11pt;
     margin: 0;
     padding-left: 13pt;
+}
+article table {
+    font-size: 10pt;
 }
 
 /* Blockquotes */
