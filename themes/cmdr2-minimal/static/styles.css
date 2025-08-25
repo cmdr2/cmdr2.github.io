@@ -40,7 +40,7 @@ table, th, td {
     border: 1px solid var(--header-border);
     border-collapse: collapse;
 }
-td {
+th, td {
     padding: 2pt 4pt;
 }
 
