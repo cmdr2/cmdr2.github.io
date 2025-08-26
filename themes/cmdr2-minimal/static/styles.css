@@ -1,6 +1,6 @@
 :root {
     --background: #1f2021;
-    --foreground: #f8f8f2;
+    --foreground: #fff9ec;
     --header-bg: #1e1f1c;
     --header-border: #3e3d32;
     --header-title: #a6e22e;
@@ -12,7 +12,7 @@
     --blockquote-text: #e6db74;
     --code-bg: #0e0e0e;
     --code-inline-bg: #49483e;
-    --code-inline: #f8f8f2;
+    --code-inline: #fff9ec;
     --post-border: #2c363f;
     --footer-bg: #1e1f1c;
     --footer-text: #75715e;
