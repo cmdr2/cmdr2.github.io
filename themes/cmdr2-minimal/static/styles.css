@@ -6,7 +6,7 @@
     --header-title: #a6e22e;
     --link: #66d9ef;
     --link-hover: #ff4f8f;
-    --projects-label: #0fb0e1;
+    --nav-label: #0fb0e1;
     --heading: #ffffff;
     --blockquote-border: #f92672;
     --blockquote-bg: #3e3d32;
@@ -78,7 +78,7 @@ header h1 a {
 #project-nav h4 {
     font-size: 10pt;
     margin: 0;
-    color: var(--projects-label)
+    color: var(--nav-label)
 }
 .project-link {
     color: var(--link);
@@ -283,7 +283,7 @@ footer {
 }
 #postFilter label {
     font-weight: bold;
-    color: var(--heading);
+    color: var(--nav-label);
 }
 
 .filterBy {
