@@ -210,6 +210,10 @@ time {
     font-size: var(--font-size-article);
     color: var(--comment);
 }
+time a {
+    text-decoration: none;
+    border-bottom: 1px solid var(--comment);
+}
 
 /* Tags class styling */
 ul.tags {
