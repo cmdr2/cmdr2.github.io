@@ -147,7 +147,7 @@ p {
 article ul,
 article ol {
     font-size: var(--font-size-article);
-    /* margin: 0; */
+    margin-left: 6pt;
     padding-left: 13pt;
 }
 article table {
