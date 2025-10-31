@@ -77,7 +77,7 @@ header h1 a {
     display: block;
 }
 #project-nav h4 {
-    font-size: var(--font-size-article);
+    font-size: 10pt;
     margin: 0;
     color: var(--nav-label)
 }
