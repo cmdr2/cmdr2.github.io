@@ -350,7 +350,7 @@ footer {
     }
 
     .post_list article p {
-        font-size: 10pt;
+        font-size: var(--font-size-article);
     }
 
     #postFilter {
