@@ -9,7 +9,7 @@
         <time class="date"><a href="{{ .RelPermalink }}">{{ .Date.Format "Mon Jan 02 15:04 2006" }}</a></time>
         <div class="post_content">
           {{ with .Params.tags }}<ul class="tags">{{ range . }}<li class="tag">#{{ . }}</li>{{ end }}</ul>{{ end }}
-          <p>{{ .Summary | plainify }}</p>
+          <p>{{ .Summary | replaceRE "\\<p\\>// Cross-posted from .* blog</a>\\.\\<\\/p\\>" "" | plainify }}</p>
         </div>
       </article>
     {{ end }}
