@@ -11,7 +11,7 @@
   </ul>
   {{ end }}
   <div class="content">
-    {{ .Content }}
+    {{ .Content | replaceRE "\\<p\\>// Cross-posted from" "<p class='cross-posted'>// Cross-posted from" | safeHTML }}
   </div>
 </article>
 {{ end }}

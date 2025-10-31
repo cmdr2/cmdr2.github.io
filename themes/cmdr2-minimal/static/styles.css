@@ -264,6 +264,13 @@ article:not(.post_list article) {
 details summary {
     cursor: pointer;
 }
+article .cross-posted {
+    font-size: 9pt;
+    color: var(--comment);
+}
+article .cross-posted a {
+    color: var(--comment);
+}
 
 /* Footer */
 footer {
