@@ -104,8 +104,8 @@ article a {
 /* Blog post titles */
 h1, h2, h3, h4, h5, h6 {
     color: var(--heading);
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
+    margin-top: 2.5em;
+    margin-bottom: 1.3em;
     font-size: var(--font-size-article);
 }
 article h1::before {
