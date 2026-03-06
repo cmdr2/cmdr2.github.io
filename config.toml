@@ -36,6 +36,10 @@ theme = "cmdr2-minimal"
   discord = "#"
   discordAlert = "cmdr2 is the discord username"
 
+  [params.author]
+    name = "cmdr2"
+    email = "dev@cmdr2.org"
+
 relativeURLs = true
 canonifyURLs = false
 
